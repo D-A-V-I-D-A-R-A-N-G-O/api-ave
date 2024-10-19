@@ -1,0 +1,11 @@
+[
+    {
+        "id": 1,
+        "nombre" : "Bichofue",
+        "alimentación" : [
+            "fruta",
+            "bichos"
+        ],
+        "imgUrl": "http://localhost:8080/API/img/1.jpg"
+    }
+]
