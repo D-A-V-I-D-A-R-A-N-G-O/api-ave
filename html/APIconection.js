@@ -1,6 +1,6 @@
 async function obtenerAves() {
     try {
-        const response = await fetch('http://localhost:8080/API/');
+        const response = await fetch('http://localhost:8080/API/aves');
         const data = await response.json()
         const birdContainer = document.getElementById('bird-container')
 

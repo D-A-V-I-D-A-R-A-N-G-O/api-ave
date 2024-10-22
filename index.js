@@ -2,9 +2,12 @@ const express = require('express')
 const bodyParser = require('body-parser')
 const rutaAves = require("./routes/aves.js")
 const path = require('path');
+const cors = require('cors');
 
 const myApp = express()
 const port = 8080
+
+myApp.use(cors());
 
 myApp.use('/API/img/', express.static(path.join(__dirname, './img/')));
 
