@@ -7,5 +7,24 @@
             "bichos"
         ],
         "imgUrl": "http://localhost:8080/API/img/1.png"
+    },
+    {
+        "id": 2,
+        "nombre" : "Barranquero",
+        "alimentación" : [
+            "fruta",
+            "bichos"
+        ],
+        "imgUrl":"http://localhost:8080/API/img/2.png"
+    },
+    {
+        "id": 3,
+        "nombre" : "Mirla",
+        "alimentación" : [
+            "fruta",
+            "bichos",
+            "insectos"
+        ],
+        "imgUrl": "http://localhost:8080/API/img/3.png"
     }
 ]

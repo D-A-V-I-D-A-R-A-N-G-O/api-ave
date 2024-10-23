@@ -4,20 +4,20 @@ async function obtenerAves() {
         const response = await fetch('http://localhost:8080/API/aves');
         const data = await response.json()
         const avesContainer = document.getElementById('aves-container')
-
-        data.results.forEach(aves => {
+        console.log(data)
+        data.results.forEach(ave => {
             const avesElement = document.createElement('div')
-            avesElement.classList.add('aves')
-            avesElement.innerHTML = `<img id=imagen src="${aves.imgUrl}" alt="${aves.nombre}">
+            avesElement.classList.add('ave')
+            avesElement.innerHTML = `<img id=imgUrlS src="${ave.imgUrl}" alt="${ave.nombre}">
         <div>
-            <h3>NOMBRE: ${aves.nombre}</h1>
-            <p>NOMBRE: ${aves.nombre}</p>
-            <p>ALIMENTACIÓN: ${aves.alimentación}</p>
+            <h3>NOMBRE: ${ave.nombre}</h1>
+            <p>NOMBRE: ${ave.nombre}</p>
+            <p>ALIMENTACIÓN: ${ave.alimentación}</p>
         </div>`
         avesContainer.appendChild(avesElement)
         });
     } catch (error) {
-        console.error("no se puedo hacer", error)
+        console.error("no se pudo hacer", error)
 }
 }
 window.onload = obtenerAves
