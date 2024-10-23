@@ -9,10 +9,10 @@ async function obtenerAves() {
             aveElement.classList.add('ave')
             aveElement.innerHTML = 
             `<div>
-                <h2>NOMBRE: ${ave.nombre}</p>
+                <h2 id="nombre">NOMBRE: ${ave.nombre}</p>
                 <img id=imgUrlS src="${ave.imgUrl}" alt="${ave.nombre}">
                 <h3>ALIMENTACIÓN: ${ave.alimentación}</h3>
-                <h3>FRECUENCIA: ${ave.Frecuencia}</h3>
+                <h3>VIENE: ${ave.Viene}</h3>
 
             </div>`
         avesContainer.appendChild(aveElement)

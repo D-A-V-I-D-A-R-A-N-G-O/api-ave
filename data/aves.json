@@ -2,20 +2,47 @@
     {
         "id": 1,
         "nombre" : "Bichofue",
-        "alimentación" : "fruta",
+        "alimentación" : ["fruta ","carne"],
+        "Viene": "Casi Siempre",
         "imgUrl": "http://localhost:8080/API/img/1.png"
     },
     {
         "id": 2,
         "nombre" : "Barranquero",
         "alimentación" : "fruta",
-        "Frecuencia": "poca",
+        "Viene": "A Veces",
         "imgUrl":"http://localhost:8080/API/img/2.png"
     },
     {
         "id": 3,
         "nombre" : "Mirla",
         "alimentación" : "fruta",
+        "Viene": "A Veces",
         "imgUrl": "http://localhost:8080/API/img/3.png"
+    },
+    {
+        "id": 5,
+        "nombre" : "Canario",
+        "alimentación" : "Alpiste",
+        "Viene": "Mucho",
+        "imgUrl":"http://localhost:8080/API/img/5.png"
+    },{
+        "id": 4,
+        "nombre" : "Guacharaca",
+        "alimentación" : "fruta",
+        "Viene": "Ya No",
+        "imgUrl":"http://localhost:8080/API/img/4.png"
+    },{
+        "id": 6,
+        "nombre" : "Barranquero",
+        "alimentación" : "fruta",
+        "Viene": "A Veces",
+        "imgUrl":"http://localhost:8080/API/img/2.png"
+    },{
+        "id": 7,
+        "nombre" : "Barranquero",
+        "alimentación" : "fruta",
+        "Viene": "A Veces",
+        "imgUrl":"http://localhost:8080/API/img/2.png"
     }
 ]
