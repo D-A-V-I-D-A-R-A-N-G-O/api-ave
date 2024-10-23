@@ -8,7 +8,7 @@ async function obtenerAves() {
         data.results.forEach(aves => {
             const avesElement = document.createElement('div')
             avesElement.classList.add('aves')
-            avesElement.innerHTML = `<img id=imagen src="${aves.imgUrl}" alt="{aves.nombre}">
+            avesElement.innerHTML = `<img id=imagen src="${aves.imgUrl}" alt="${aves.nombre}">
         <div>
             <h3>NOMBRE: ${aves.nombre}</h1>
             <p>NOMBRE: ${aves.nombre}</p>
@@ -17,8 +17,8 @@ async function obtenerAves() {
         avesContainer.appendChild(avesElement)
         });
     } catch (error) {
-        console.error('Error: no se puedo obtener el mensaje', error);
-
-    }
+        console.error("no se puedo hacer", error)
+}
 }
 window.onload = obtenerAves
+
