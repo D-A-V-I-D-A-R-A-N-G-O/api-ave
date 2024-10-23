@@ -9,6 +9,7 @@
         "id": 2,
         "nombre" : "Barranquero",
         "alimentación" : "fruta",
+        "Frecuencia": "poca",
         "imgUrl":"http://localhost:8080/API/img/2.png"
     },
     {

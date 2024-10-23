@@ -7,12 +7,14 @@ async function obtenerAves() {
         data.forEach(ave => {
             const aveElement = document.createElement('div')
             aveElement.classList.add('ave')
-            aveElement.innerHTML = `<img id=imgUrlS src="${ave.imgUrl}" alt="${ave.nombre}">
-        <div>
-            <h3>NOMBRE: ${ave.nombre}</h1>
-            <p>NOMBRE: ${ave.nombre}</p>
-            <p>ALIMENTACIÓN: ${ave.alimentación}</p>
-        </div>`
+            aveElement.innerHTML = 
+            `<div>
+                <h2>NOMBRE: ${ave.nombre}</p>
+                <img id=imgUrlS src="${ave.imgUrl}" alt="${ave.nombre}">
+                <h3>ALIMENTACIÓN: ${ave.alimentación}</h3>
+                <h3>FRECUENCIA: ${ave.Frecuencia}</h3>
+
+            </div>`
         avesContainer.appendChild(aveElement)
         });
     } catch (error) {
