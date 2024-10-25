@@ -9,7 +9,8 @@
     {
         "id": 2,
         "nombre" : "Barranquero",
-        "alimentación" : "fruta",
+        "alimentación" : ["Fruta ",
+        "Bichos"],
         "Viene": "A Veces",
         "imgUrl":"http://localhost:8080/API/img/2.png"
     },
@@ -34,15 +35,15 @@
         "imgUrl":"http://localhost:8080/API/img/4.png"
     },{
         "id": 6,
-        "nombre" : "Barranquero",
+        "nombre" : "Sinsonte",
         "alimentación" : "fruta",
         "Viene": "A Veces",
-        "imgUrl":"http://localhost:8080/API/img/2.png"
+        "imgUrl":"http://localhost:8080/API/img/6.png"
     },{
         "id": 7,
-        "nombre" : "Barranquero",
+        "nombre" : "Cabecirufa",
         "alimentación" : "fruta",
         "Viene": "A Veces",
-        "imgUrl":"http://localhost:8080/API/img/2.png"
+        "imgUrl":"http://localhost:8080/API/img/7.png"
     }
 ]

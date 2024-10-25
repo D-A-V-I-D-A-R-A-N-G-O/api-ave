@@ -1,5 +1,5 @@
 body {
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-family: monospace;
     background: rgb(122,228,116);
     background: linear-gradient(90deg, rgba(122,228,116,1) 13%, rgba(0,212,255,1) 100%);
     align-content: center;
@@ -11,8 +11,7 @@ body {
 }
 img {
     border-radius: 50px;
-    image-resolution: from-image 300dpi;
-    width: 300px;
+    width: 250px;
 }
 h1 {
     text-align: center;
@@ -25,4 +24,12 @@ h1 {
 }
 h1 {
     font-size: 400%;
+}
+.ave p {
+    text-align: center;
+    background-color: aquamarine;
+    border-radius: 40px;
+}
+.ave h3 {
+    background-color: cadetblues;
 }
