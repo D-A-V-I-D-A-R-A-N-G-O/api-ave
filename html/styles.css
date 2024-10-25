@@ -10,7 +10,7 @@ body {
     align-items: center;
 }
 img {
-    border-radius: 50px;
+    border-radius: 60px;
     width: 250px;
 }
 h1 {
@@ -24,6 +24,7 @@ h1 {
 }
 h1 {
     font-size: 400%;
+    
 }
 .ave p {
     text-align: center;
@@ -31,5 +32,8 @@ h1 {
     border-radius: 40px;
 }
 .ave h3 {
-    background-color: cadetblues;
+    background-color: aqua;
+    border-radius: 5px;
+    text-align: center;
+
 }

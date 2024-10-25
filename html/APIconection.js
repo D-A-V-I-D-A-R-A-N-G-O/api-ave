@@ -25,7 +25,6 @@ async function obtenerAves() {
             aveElement.innerHTML = 
             `<div>
                 <h2 id="nombre">${ave.nombre}</h2>
-                <p>NOMBRE</p>
                 <img id="imgUrlS" src="${ave.imgUrl}" alt="${ave.nombre}">
                 <h3>ALIMENTACIÓN: ${ave.alimentación}</h3>
                 <h3>VIENE: ${caRita()}</h3>
