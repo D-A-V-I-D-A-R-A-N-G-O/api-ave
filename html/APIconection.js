@@ -18,7 +18,8 @@ async function obtenerAves() {
                     pepe = [ave.Viene,  "😅"];
                 } else if  (ave.Viene === "Ya No") {
                     pepe = [ave.Viene, "😔"];
-                }
+                } else if(ave.Viene)
+                    pepe = [ave.Viene]
                 return pepe
             }
 
