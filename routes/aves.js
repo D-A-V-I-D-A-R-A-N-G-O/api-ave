@@ -41,6 +41,7 @@ router.post('/', (req, res) => {
         id: aves.length ? aves[aves.length - 1].id + 1 : 1,
         nombre: req.body.nombre,
         alimentación: req.body.alimentación,
+        Viene: req.body.Viene,
         imgUrl: req.body.imgUrl
     };
     aves.push(newave);
@@ -58,6 +59,7 @@ router.put('/:id', (req, res)=>{
             ...aves[aveIndex],
         nombre: req.body.nombre || aves[aveIndex].nombre,
         alimentación: req.body.alimentación || aves[aveIndex].alimentación,
+        Viene: req.body.Viene || aves[aveIndex].Viene,
         imgUrl: req.body.imgUrl || aves[aveIndex].imgUrl
         }
         saveAves(aves)
