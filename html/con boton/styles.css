@@ -1,0 +1,21 @@
+body {
+    font-family: monospace;
+    background: rgb(122,228,116);
+    background: linear-gradient(90deg, rgba(122,228,116,1) 13%, rgba(0,212,255,1) 100%);
+    align-content: center;
+}
+img {
+    border-radius: 60px;
+    width: 250px;
+}
+h1 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 400%;
+}
+aves-container {
+    background-color: antiquewhite;
+}
+

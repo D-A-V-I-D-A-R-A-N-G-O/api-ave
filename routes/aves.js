@@ -40,7 +40,7 @@ router.post('/', (req, res) => {
     const newave = {
         id: aves.length ? aves[aves.length - 1].id + 1 : 1,
         nombre: req.body.nombre,
-        alimentación: req.body.alimentación,
+        alimentacion: req.body.alimentacion,
         Viene: req.body.Viene,
         imgUrl: req.body.imgUrl
     };
@@ -58,7 +58,7 @@ router.put('/:id', (req, res)=>{
         aves[aveIndex]={
             ...aves[aveIndex],
         nombre: req.body.nombre || aves[aveIndex].nombre,
-        alimentación: req.body.alimentación || aves[aveIndex].alimentación,
+        alimentacion: req.body.alimentación || aves[aveIndex].alimentacion,
         Viene: req.body.Viene || aves[aveIndex].Viene,
         imgUrl: req.body.imgUrl || aves[aveIndex].imgUrl
         }
