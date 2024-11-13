@@ -31,3 +31,6 @@ button, select{
     border-radius: 40px;
     background-color: aqua;
  }
+ #formu input{
+    border-radius: 25px;
+ }
