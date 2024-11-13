@@ -18,7 +18,8 @@ h1 {
     background-size: contain ;
 }
 button, select{
-    text-align: center;
+    display: flex;
+    align-self: center;
     border-width: 2px;
     font-family: monospace;
     border-radius: 25px;
