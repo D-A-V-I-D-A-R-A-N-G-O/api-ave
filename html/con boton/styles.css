@@ -1,21 +1,32 @@
 body {
-    font-family: monospace;
+    font-family: OCR A Std, monospace;
     background: rgb(122,228,116);
     background: linear-gradient(90deg, rgba(122,228,116,1) 13%, rgba(0,212,255,1) 100%);
     align-content: center;
+    padding: 20px;
 }
 img {
+    padding: 40pzx;
     border-radius: 60px;
     width: 250px;
 }
 h1 {
     text-align: center;
-}
-
-h1 {
     font-size: 400%;
 }
-aves-container {
-    background-color: antiquewhite;
+#personaje {
+    background-size: contain ;
 }
+button, select{
+    text-align: center;
+    border-width: 2px;
+    font-family: monospace;
+    border-radius: 25px;
+}
+#aves-container {
 
+    text-align: center;
+    background-color: rgb(147, 211, 229);
+    border-radius: 40px;
+    background-color: aqua;
+ }

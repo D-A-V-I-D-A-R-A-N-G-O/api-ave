@@ -24,12 +24,26 @@ function reciBir() {
       fetch('http://localhost:8080/API/aves/'+Pepe)
     .then(respuesta => respuesta.json())
     .then(datos => {
+      let caRita = () => {
+        let pepe
+        if (datos.Viene === "Mucho") { 
+            pepe = [datos.Viene, "😁"];
+        } else if (datos.Viene === "A Veces") { 
+            pepe = [datos.Viene, "😐"];
+        } else if (datos.Viene === "Casi Siempre") {
+            pepe = [datos.Viene,  "😅"];
+        } else if  (datos.Viene === "Ya No") {
+            pepe = [datos.Viene, "😔"];
+        } else if(datos.Viene)
+            pepe = [datos.Viene]
+        return pepe}
       document.getElementById('aves-container').innerHTML =    
-            `<div>
+            `<div id="personaje">
                 <h2 >${datos.nombre}</h2>
                 <img src="${datos.imgUrl}" alt="${datos.nombre}">
                 <h3>ALIMENTACIÓN: ${datos.alimentacion}</h3>
-                <h3>VIENE: ${datos.Viene}</h3>
+                <h3>VIENE: ${caRita(
+                )}</h3>
             </div>`
     })
     } catch (error) {
