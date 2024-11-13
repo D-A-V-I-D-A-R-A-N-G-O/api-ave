@@ -52,17 +52,21 @@ function reciBir() {
     }
   }
   
-  const enviar = fetch('http://localhost:8080/API/aves/'+Pepe, {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify({
-      nombre: 'sebastian reyes',
-      alimentación: 'mariguana',
-      Viene : 'todos los dias',
-      imgUrl: 'https://th.bing.com/th/id/OIP.4XIW51tT28OyuGKz2cQzAQHaGO?rs=1&pid=ImgDetMain'
-    }),
-  }).then(respuesta => resporespuestanse.json())
-    .then(datos => console.log(datos))
+  function moDificar() {
+    let Pepe = document.getElementById('lista').value
+     
+          fetch('http://localhost:8080/API/aves/'+Pepe, {
+          method: 'PUT',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            nombre: document.getElementById('nombre').value,
+            alimentación: document.getElementById('alimento').value,
+            Viene : document.getElementById('viene').value,
+            imgUrl: document.getElementById('imgUrl').value
+          }),
+        }).then(respuesta => resporespuestanse.json())
+          .then(datos => console.log(datos))
+      } 
  
