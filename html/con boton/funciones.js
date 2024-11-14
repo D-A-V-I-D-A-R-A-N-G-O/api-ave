@@ -99,7 +99,7 @@ function eDitar() {
               <input type="text" id="alimento" placeholder=${datos.alimentacion}>
               <input type="text" id="viene"  placeholder="${caRita()}">
               <input type="text" id="imgUrl" placeholder="ingrese la url de la imagen">
-                  <button onclick="moDificar()"  id="modi">guardar</button>
+                  <button onclick="moDificar()"  id="moDificar">guardar</button>
 
 
           </div>`

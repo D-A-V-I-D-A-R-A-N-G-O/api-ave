@@ -25,19 +25,30 @@ button, select{
     padding: 10px;
     
  }
- #formu input{
-    border-radius: 5px;
- }
+ 
  select{
     text-align: center;
  }
  h1 {
-    background-color: aqua;
+    
     margin-block: 10px;
     border-radius: 40px;
+    
  }
- #aves-container, #formu {
+ #aves-container, #formu , #moDificar    {
     display: grid;
     justify-content: center;
     text-align: center;
+    margin-top: 5px;
+ }
+ input{
+    margin-top: 7px;
+    border-radius: 5px;
+ }
+
+ #personaje{
+    background-color: aqua;
+    border-radius: 90px;
+    width: 115%;
+    height: 105%;
  }

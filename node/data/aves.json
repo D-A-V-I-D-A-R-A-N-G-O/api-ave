@@ -12,10 +12,7 @@
   {
     "id": 2,
     "nombre": "Barranquero",
-    "alimentacion": [
-      "Fruta ",
-      "Bichos"
-    ],
+    "alimentacion": "fruta y bichos",
     "Viene": "A Veces",
     "imgUrl": "http://localhost:8080/API/img/2.png"
   },
