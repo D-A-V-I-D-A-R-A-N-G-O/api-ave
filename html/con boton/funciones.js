@@ -24,6 +24,8 @@ function reciBir() {
       fetch('http://localhost:8080/API/aves/'+Pepe)
     .then(respuesta => respuesta.json())
     .then(datos => {
+      /* document.getElementById('modi').style.display = 'none'; */
+      document.getElementById('formu').style.display = 'none';
       let caRita = () => {
         let pepe
         if (datos.Viene === "Mucho") { 
@@ -42,8 +44,8 @@ function reciBir() {
                 <h2 >${datos.nombre}</h2>
                 <img src="${datos.imgUrl}" alt="${datos.nombre}">
                 <h3>ALIMENTACIÓN: ${datos.alimentacion}</h3>
-                <h3>VIENE: ${caRita(
-                )}</h3>
+                <h3>VIENE: ${caRita()}</h3>
+                <button onclick="eDitar()" >Editar</button>
             </div>`
     })
     } catch (error) {
@@ -69,25 +71,53 @@ function reciBir() {
         }).then(respuesta => resporespuestanse.json())
           .then(datos => console.log(datos))
       } 
- 
-      function eDitar() {
-        let Pepe = 1
-        /* let Pepe = document.getElementById('lista').value */
+
+function eDitar() {
+        
+        let Pepe = document.getElementById('lista').value 
           
           try {
             fetch('http://localhost:8080/API/aves/'+Pepe)
           .then(respuesta => respuesta.json())
           .then(datos => {
+            let caRita = () => {
+              let pepe
+              if (datos.Viene === "Mucho") { 
+                  pepe = [datos.Viene, "😁"];
+              } else if (datos.Viene === "A Veces") { 
+                  pepe = [datos.Viene, "😐"];
+              } else if (datos.Viene === "Casi Siempre") {
+                  pepe = [datos.Viene,  "😅"];
+              } else if  (datos.Viene === "Ya No") {
+                  pepe = [datos.Viene, "😔"];
+              } else if(datos.Viene)
+                  pepe = [datos.Viene]
+              return pepe}
             document.getElementById('formu').innerHTML =    
                   `<div id="formu">
-              <input type="text" id="nombre" placeholder="ingrese el nombre">
-              <input type="text" id="alimento" placeholder="ingrese el alimento">
-              <input type="text" id="viene"  placeholder="cada cuanto viene">
+              <input type="text" id="nombre" placeholder=${datos.nombre}>
+              <input type="text" id="alimento" placeholder=${datos.alimentacion}>
+              <input type="text" id="viene"  placeholder="${caRita()}">
               <input type="text" id="imgUrl" placeholder="ingrese la url de la imagen">
+                  <button onclick="moDificar()"  id="modi">guardar</button>
+
+
           </div>`
+          document.getElementById('formu').style.display = 'block';
           })
           } catch (error) {
             console.error('no se pudo encontrar', error)
           }
-      }
+}
+
+function ocultarFormulario() {
+  document.getElementById('modi').style.display = 'none';
+  document.getElementById('formu').style.display = 'none';
+  // Limpiar los valores del formulario
+  document.getElementById('nombre').value = '';
+  document.getElementById('alimento').value = '';
+  document.getElementById('viene').value = '';
+  document.getElementById('imgUrl').value = '';
+}
+
       

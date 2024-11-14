@@ -18,11 +18,10 @@ h1 {
     background-size: contain ;
 }
 button, select{
-    display: flex;
     align-self: center;
-    border-width: 2px;
+    border-width: 3px;
     font-family: monospace;
-    border-radius: 25px;
+    border-radius: 7px;
 }
 #aves-container {
 
@@ -31,6 +30,13 @@ button, select{
     border-radius: 40px;
     background-color: aqua;
  }
+ #formu  {
+    padding: 10px;
+    
+ }
  #formu input{
-    border-radius: 25px;
+    border-radius: 5px;
+ }
+ select{
+    text-align: center;
  }

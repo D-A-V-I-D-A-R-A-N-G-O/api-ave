@@ -43,7 +43,7 @@
   {
     "id": 6,
     "nombre": "Sinsonte",
-    "alimentacion": "fruta",
+    "alimentacion": "fruta y sentimientos",
     "Viene": "A Veces",
     "imgUrl": "http://localhost:8080/API/img/6.png"
   },
@@ -105,9 +105,9 @@
   },
   {
     "id": 14,
-    "nombre": "Daniel Agudelo",
+    "nombre": "daniel felipe",
     "alimentacion": "javascript",
-    "Viene": "10 minutos tarde",
+    "Viene": "cada que se le pega en gana",
     "imgUrl": "https://yt3.googleusercontent.com/ag74-HFEQMRdbSpjdGXor88CHalqYyjJT1PUNUL2UyT-LtSri4uZdN5hcuY2nEh-qUrO_f59nA=s160-c-k-c0x00ffffff-no-rj"
   },
   {
