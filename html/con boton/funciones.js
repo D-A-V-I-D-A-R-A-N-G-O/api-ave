@@ -1,6 +1,6 @@
 async function obtenerlistaAves() {
     try {
-        const response = await fetch('http://localhost:8080/API/aves');
+        const response = await fetch('http://192.168.1.6:8080/API/aves');
         const data = await response.json();
         const listaContainer = document.getElementById('lista');
         console.log(data); 
@@ -21,11 +21,11 @@ function reciBir() {
     let Pepe = document.getElementById('lista').value
     
     try {
-      fetch('http://localhost:8080/API/aves/'+Pepe)
+      fetch('http://192.168.1.6:8080/API/aves/'+Pepe)
     .then(respuesta => respuesta.json())
     .then(datos => {
       /* document.getElementById('modi').style.display = 'none'; */
-      document.getElementById('formu').style.display = 'none';
+      document.getElementById('formul').style.display = 'none';
       let caRita = () => {
         let pepe
         if (datos.Viene === "Mucho") { 
@@ -57,7 +57,7 @@ function reciBir() {
   function moDificar() {
     let Pepe = document.getElementById('lista').value
      
-          fetch('http://localhost:8080/API/aves/'+Pepe, {
+          fetch('http://192.168.1.6:8080/API/aves/'+Pepe, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -70,6 +70,7 @@ function reciBir() {
           }),
         }).then(respuesta => resporespuestanse.json())
           .then(datos => console.log(datos))
+          reciBir()
       } 
 
 function eDitar() {
@@ -77,7 +78,7 @@ function eDitar() {
         let Pepe = document.getElementById('lista').value 
           
           try {
-            fetch('http://localhost:8080/API/aves/'+Pepe)
+            fetch('http://192.168.1.6:8080/API/aves/'+Pepe)
           .then(respuesta => respuesta.json())
           .then(datos => {
             let caRita = () => {
@@ -93,7 +94,7 @@ function eDitar() {
               } else if(datos.Viene)
                   pepe = [datos.Viene]
               return pepe}
-            document.getElementById('formu').innerHTML =    
+            document.getElementById('formul').innerHTML =    
                   `<div id="formu">
               <input type="text" id="nombre" placeholder=${datos.nombre}>
               <input type="text" id="alimento" placeholder=${datos.alimentacion}>
@@ -103,21 +104,20 @@ function eDitar() {
 
 
           </div>`
-          document.getElementById('formu').style.display = 'block';
+          document.getElementById('formul').style.display = 'block';
           })
           } catch (error) {
             console.error('no se pudo encontrar', error)
           }
 }
-
+/* 
 function ocultarFormulario() {
   document.getElementById('modi').style.display = 'none';
-  document.getElementById('formu').style.display = 'none';
-  // Limpiar los valores del formulario
+  document.getElementById('formul').style.display = 'none';
   document.getElementById('nombre').value = '';
   document.getElementById('alimento').value = '';
   document.getElementById('viene').value = '';
   document.getElementById('imgUrl').value = '';
 }
-
+ */
       

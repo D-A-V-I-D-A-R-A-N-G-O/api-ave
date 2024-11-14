@@ -19,7 +19,7 @@
   {
     "id": 3,
     "nombre": "Mirla",
-    "alimentacion": "fruta",
+    "alimentacion": "frut",
     "Viene": "A Veces",
     "imgUrl": "http://localhost:8080/API/img/3.png"
   },
@@ -82,7 +82,7 @@
   {
     "id": 11,
     "nombre": "peter grifing",
-    "alimentacion": "Pollos Gigantes",
+    "alimentacion": "pollo y redbull",
     "Viene": "Mucho",
     "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG2A1WfO0dN2giiE4ggozrg00TrLaEf6kYZA&s"
   },
@@ -90,7 +90,7 @@
     "id": 12,
     "nombre": "Gustavo Fring",
     "alimentacion": "pollos hermanos",
-    "Viene": "Hello",
+    "Viene": "metanfetamina",
     "imgUrl": "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84710c884ece98928ef8b37905"
   },
   {
