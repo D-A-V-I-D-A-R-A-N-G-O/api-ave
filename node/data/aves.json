@@ -31,7 +31,7 @@
     "nombre": "Canario",
     "alimentacion": "Alpiste",
     "Viene": "Mucho",
-    "imgUrl": "http://localhost:8080/API/img/5.png"
+    "imgUrl": "https://th.bing.com/th/id/R.3c762362957b056e51bf7f8bcdb44bf5?rik=500rEU5n5vjQQw&pid=ImgRaw&r=0"
   },
   {
     "id": 4,
@@ -84,7 +84,7 @@
   },
   {
     "id": 11,
-    "nombre": "Peter Griffin",
+    "nombre": "peter grifing",
     "alimentacion": "Pollos Gigantes",
     "Viene": "Mucho",
     "imgUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG2A1WfO0dN2giiE4ggozrg00TrLaEf6kYZA&s"
