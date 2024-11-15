@@ -45,7 +45,7 @@ function reciBir() {
                 <img src="${datos.imgUrl}" alt="${datos.nombre}">
                 <h3>ALIMENTACIÓN: ${datos.alimentacion}</h3>
                 <h3>VIENE: ${caRita()}</h3>
-                <button onclick="eDitar()" >Editar</button>
+                <button id="eDitar" onclick="eDitar()" >Editar</button>
             </div>`
     })
     } catch (error) {
@@ -68,7 +68,7 @@ function reciBir() {
             Viene : document.getElementById('viene').value,
             imgUrl: document.getElementById('imgUrl').value
           }),
-        }).then(respuesta => resporespuestanse.json())
+        }).then(respuesta => respuesta.json())
           .then(datos => console.log(datos))
           reciBir()
       } 
@@ -96,11 +96,16 @@ function eDitar() {
               return pepe}
             document.getElementById('formul').innerHTML =    
                   `<div id="formu">
+              <h2>Nombre</h2>
               <input type="text" id="nombre" placeholder=${datos.nombre}>
+              <h2>Alimentación</h2>
               <input type="text" id="alimento" placeholder=${datos.alimentacion}>
+              <h2>Viene</h2>
               <input type="text" id="viene"  placeholder="${caRita()}">
+              <h2>URL de la imagen</h2>
               <input type="text" id="imgUrl" placeholder="ingrese la url de la imagen">
-                  <button onclick="moDificar()"  id="moDificar">guardar</button>
+              <hr>
+              <button onclick="moDificar()"  id="moDificar">guardar</button>
 
 
           </div>`
@@ -110,14 +115,27 @@ function eDitar() {
             console.error('no se pudo encontrar', error)
           }
 }
-/* 
-function ocultarFormulario() {
-  document.getElementById('modi').style.display = 'none';
-  document.getElementById('formul').style.display = 'none';
-  document.getElementById('nombre').value = '';
-  document.getElementById('alimento').value = '';
-  document.getElementById('viene').value = '';
-  document.getElementById('imgUrl').value = '';
-}
- */
+ function cRear() {
+    let Pepe = document.getElementById('lista').value
+    try {
+      function moDificar() {     
+              fetch('http://192.168.1.6:8080/API/aves/'+Pepe, {
+              method: 'POST',
+              headers: {
+                'Content-Type': 'application/json',
+              },
+              body: JSON.stringify({
+                nombre: document.getElementById('nombre').value,
+                alimentación: document.getElementById('alimento').value,
+                Viene : document.getElementById('viene').value,
+                imgUrl: document.getElementById('imgUrl').value
+              }),
+            }).then(respuesta => respuesta.json())
+              .then(datos => console.log(datos))
+              reciBir()
+          } 
+    } catch (error) {
       
+    }
+  
+ }
