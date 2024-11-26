@@ -1,6 +1,6 @@
 async function obtenerlistaAves() {
     try {
-        const response = await fetch('http://192.168.1.6:8080/API/aves');
+        const response = await fetch('http://192.168.1.23:8080/API/aves');
         const data = await response.json();
         const listaContainer = document.getElementById('lista');
         console.log(data); 
@@ -21,7 +21,7 @@ function reciBir() {
     let Pepe = document.getElementById('lista').value
     
     try {
-      fetch('http://192.168.1.6:8080/API/aves/'+Pepe)
+      fetch('http://192.168.1.23:8080/API/aves/'+Pepe)
     .then(respuesta => respuesta.json())
     .then(datos => {
       /* document.getElementById('modi').style.display = 'none'; */
@@ -57,7 +57,7 @@ function reciBir() {
   function moDificar() {
     let Pepe = document.getElementById('lista').value
      
-          fetch('http://192.168.1.6:8080/API/aves/'+Pepe, {
+          fetch('http://192.168.1.23:8080/API/aves/'+Pepe, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -78,7 +78,7 @@ function eDitar() {
         let Pepe = document.getElementById('lista').value 
           
           try {
-            fetch('http://192.168.1.6:8080/API/aves/'+Pepe)
+            fetch('http://192.168.1.23:8080/API/aves/'+Pepe)
           .then(respuesta => respuesta.json())
           .then(datos => {
             let caRita = () => {
@@ -119,7 +119,7 @@ function eDitar() {
     let Pepe = document.getElementById('lista').value
     try {
       function moDificar() {     
-              fetch('http://192.168.1.6:8080/API/aves/'+Pepe, {
+              fetch('http://192.168.1.23:8080/API/aves/'+Pepe, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
