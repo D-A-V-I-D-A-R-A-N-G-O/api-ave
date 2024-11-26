@@ -1,19 +1,19 @@
 async function obtenerlistaAves() {
-    try {
-        const response = await fetch('http://192.168.1.23:8080/API/aves');
-        const data = await response.json();
-        const listaContainer = document.getElementById('lista');
-        listaContainer.innerHTML = '';  // Limpiar la lista antes de cargar los nuevos datos
-        data.forEach(ave => {
-            const aveElement = document.createElement('option');
-            aveElement.value = ave.id;
-            aveElement.textContent = ave.nombre;
-            listaContainer.appendChild(aveElement);
-        });
-        console.log(data);
-    } catch (error) {
-        console.error("no se pudo hacer", error);
-    }
+  try {
+      const response = await fetch('http://192.168.1.23:8080/API/aves');
+      const data = await response.json();
+      const listaContainer = document.getElementById('lista');
+      listaContainer.innerHTML = '';  // Limpiar la lista antes de cargar los nuevos datos
+      data.forEach(ave => {
+          const aveElement = document.createElement('option');
+          aveElement.value = ave.id;
+          aveElement.textContent = ave.nombre;
+          listaContainer.appendChild(aveElement);
+      });
+      console.log(data);
+  } catch (error) {
+      console.error("no se pudo hacer", error);
+  }
 }
 window.onload = obtenerlistaAves;
 
@@ -115,7 +115,7 @@ function eDitar() {
         .then(datos => {
           console.log(datos);
           reciBir();  
-          obtenerlistaAves();
+         
 
         })
         .catch(error => console.error('no se pudo modificar', error));
