@@ -132,10 +132,11 @@ function eDitar() {
               }),
             }).then(respuesta => respuesta.json())
               .then(datos => console.log(datos))
+              location.reload();
               reciBir()
           } 
     } catch (error) {
-      
+      console.error('no se pudo modificar', error)
     }
   
  }

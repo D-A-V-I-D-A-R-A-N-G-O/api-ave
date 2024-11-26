@@ -7,21 +7,21 @@
       "carne"
     ],
     "Viene": "Casi Siempre",
-    "imgUrl": "http://localhost:8080/API/img/1.png"
+    "imgUrl": "http://181.133.27.242:8080/API/img/1.png"
   },
   {
     "id": 2,
     "nombre": "Barranquero",
     "alimentacion": "fruta y bichos",
     "Viene": "A Veces",
-    "imgUrl": "http://localhost:8080/API/img/2.png"
+    "imgUrl": "http://181.133.27.242:8080/API/img/2.png"
   },
   {
     "id": 3,
     "nombre": "Mirla",
     "alimentacion": "frut",
     "Viene": "A Veces",
-    "imgUrl": "http://localhost:8080/API/img/3.png"
+    "imgUrl": "http://181.133.27.242:8080/API/img/3.png"
   },
   {
     "id": 5,
@@ -35,21 +35,21 @@
     "nombre": "Guacharaca",
     "alimentacion": "fruta",
     "Viene": "A Veces",
-    "imgUrl": "http://localhost:8080/API/img/4.png"
+    "imgUrl": "http://181.133.27.242:8080/API/img/4.png"
   },
   {
     "id": 6,
     "nombre": "Sinsonte",
     "alimentacion": "fruta y sentimientos",
     "Viene": "A Veces",
-    "imgUrl": "http://localhost:8080/API/img/6.png"
+    "imgUrl": "http://181.133.27.242:8080/API/img/6.png"
   },
   {
     "id": 7,
     "nombre": "Cabecirufa",
     "alimentacion": "fruta",
     "Viene": "A Veces",
-    "imgUrl": "http://localhost:8080/API/img/7.png"
+    "imgUrl": "http://181.133.27.242:8080/API/img/7.png"
   },
   {
     "id": 777,
