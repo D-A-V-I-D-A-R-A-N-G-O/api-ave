@@ -1,6 +1,6 @@
 async function obtenerlistaAves() {
   try {
-      const response = await fetch('http://192.168.1.23:8080/API/aves');
+      const response = await fetch('http://181.133.27.242:8080/API/aves');
       const data = await response.json();
       const listaContainer = document.getElementById('lista');
       listaContainer.innerHTML = '';  // Limpiar la lista antes de cargar los nuevos datos
