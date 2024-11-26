@@ -109,12 +109,15 @@ function eDitar() {
             Viene : document.getElementById('viene').value,
             imgUrl: document.getElementById('imgUrl').value
           }),
-        }).then(respuesta => respuesta.json())
-          .then(datos => console.log(datos))
-          window.location.reload()
-
-          reciBir()
-      } 
+        })
+        .then(respuesta => respuesta.json())
+        .then(datos => {
+          console.log(datos);
+          reciBir();  
+        })
+        .catch(error => console.error('no se pudo modificar', error));
+      }
+      
 
  function cRear() {
     let Pepe = document.getElementById('lista').value
@@ -138,5 +141,5 @@ function eDitar() {
     } catch (error) {
       console.error('no se pudo modificar', error)
     }
-  
  }
+  
