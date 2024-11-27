@@ -1,6 +1,6 @@
 async function obtenerlistaAves() {
   try {
-      const response = await fetch('http://181.133.27.242:8080/API/aves');
+      const response = await fetch('https://api-ave-d8ar.onrender.com/API/aves');
       const data = await response.json();
       const listaContainer = document.getElementById('lista');
       listaContainer.innerHTML = '';  // Limpiar la lista antes de cargar los nuevos datos
@@ -22,7 +22,7 @@ function reciBir() {
     let Pepe = document.getElementById('lista').value
     
     try {
-      fetch('http://181.133.27.242:8080/API/aves/'+Pepe)
+      fetch('https://api-ave-d8ar.onrender.com/API/aves/'+Pepe)
     .then(respuesta => respuesta.json())
     .then(datos => {
       document.getElementById('formul').style.display = 'none';
@@ -59,7 +59,7 @@ function eDitar() {
   let Pepe = document.getElementById('lista').value 
     
     try {
-      fetch('http://181.133.27.242:8080/API/aves/'+Pepe)
+      fetch('https://api-ave-d8ar.onrender.com/API/aves/'+Pepe)
     .then(respuesta => respuesta.json())
     .then(datos => {
       let caRita = () => {
@@ -99,7 +99,7 @@ function eDitar() {
   function moDificar() {
     let Pepe = document.getElementById('lista').value
      
-          fetch('http://181.133.27.242:8080/API/aves/'+Pepe, {
+          fetch('https://api-ave-d8ar.onrender.com/API/aves/'+Pepe, {
           method: 'PUT',
           headers: {
             'Content-Type': 'application/json',
@@ -126,7 +126,7 @@ function eDitar() {
     let Pepe = document.getElementById('lista').value
     try {
       function moDificar() {     
-              fetch('http://181.133.27.242:8080/API/aves/'+Pepe, {
+              fetch('https://api-ave-d8ar.onrender.com/API/aves/'+Pepe, {
               method: 'POST',
               headers: {
                 'Content-Type': 'application/json',
