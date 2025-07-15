@@ -1,6 +1,6 @@
 const express = require('express')
 const bodyParser = require('body-parser')
-const rutaAves = require("./routes/aves.js")
+const rutaPersonajes = require("./routes/personajes.js")
 const path = require('path');
 const cors = require('cors');
 
@@ -13,7 +13,7 @@ myApp.use('/API/img/', express.static(path.join(__dirname, './img/')));
 
 myApp.use(bodyParser.json())
 
-myApp.use('/API/aves/', rutaAves)
+myApp.use('/API/personajes/', rutaPersonajes)
 
 myApp.listen(port, () =>{
     console.log('la api esta ejecutandose por el puerto ', port)
